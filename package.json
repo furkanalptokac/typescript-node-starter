@@ -1,0 +1,26 @@
+{
+  "name": "node-typescript-setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node build/index.js",
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
